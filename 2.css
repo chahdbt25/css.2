@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    min-height: auto;
+    width: auto;
+    background-color: azure;
+}
+nav{
+    display: flex;
+    padding:  2%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img
+{
+    width: 300px;
+}
+.nav-links{
+    flex: 1;
+    text-align:center;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position:relative;
+}
+.nav-links ul li a{
+    color: #464444;
+    text-decoration: none;
+    font-size: 20px;
+}
+.nav-links ul li::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: antiquewhite;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100px;
+}
+h1{
+    color:#1abc9c ;
+    text-align: center;
+}
+table{
+    margin: 20px;
+    color: #464444;
+    size: 50%;
+}
+img{
+    align-items: center;
+}
+.projects-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+.project img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+h3{
+    color: rgb(247, 249, 251);
+}
+p{
+    color: rgb(244, 241, 238);
+}
+a{
+    color: aliceblue;
+}
+h1{
+    color: #1abc9c;
+}
+ .bouton {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            position: relative;
+        }
+        .bouton::after {
+            content: " ➜"; /* Ajoute une flèche après le texte */
+            font-weight: bold;
+            margin-left: 5px;
+        }
+    </style>
+</head>
